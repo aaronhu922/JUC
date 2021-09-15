@@ -33,7 +33,7 @@ public class T10_TestReadWriteLock {
             lock.lock();
             Thread.sleep(1000);
             value = v;
-            System.out.println("write over!");
+            System.out.println(v+ " write over!");
             //模拟写操作
         } catch (InterruptedException e) {
             e.printStackTrace();

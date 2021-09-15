@@ -31,12 +31,15 @@ public class T02_00_LockSupport {
                 LockSupport.park(); //t2阻塞
                 System.out.print(c);
                 LockSupport.unpark(t1); //叫醒t1
+//                LockSupport.park();
             }
 
         }, "t2");
 
-        t1.start();
         t2.start();
+        t1.start();
+
+
     }
 }
 

@@ -11,6 +11,7 @@ public class T03_Callable {
         Callable<String> c = new Callable() {
             @Override
             public String call() throws Exception {
+                Thread.sleep(5000);
                 return "Hello Callable";
             }
         };
@@ -19,7 +20,7 @@ public class T03_Callable {
         Future<String> future = service.submit(c); //Òì²½
 
         System.out.println(future.get());//×èÈû
-
+        System.out.println("submitted!");
         service.shutdown();
     }
 

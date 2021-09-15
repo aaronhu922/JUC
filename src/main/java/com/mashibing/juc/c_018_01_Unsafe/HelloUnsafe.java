@@ -16,6 +16,9 @@ public class HelloUnsafe {
         M m = (M)unsafe.allocateInstance(M.class);
         m.i = 9;
         System.out.println(m.i);
+
+
+
     }
 }
 

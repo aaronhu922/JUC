@@ -5,7 +5,7 @@ import java.util.concurrent.Semaphore;
 public class T11_TestSemaphore {
     public static void main(String[] args) {
         //Semaphore s = new Semaphore(2);
-        Semaphore s = new Semaphore(2, true);
+        Semaphore s = new Semaphore(1, true);
         //允许一个线程同时执行
         //Semaphore s = new Semaphore(1);
 

@@ -18,6 +18,10 @@ public class T01_WhatIsThread {
     }
 
     public static void main(String[] args) {
+//        " ".split()
+        System.out.println(Integer.valueOf("0001203"));
+//        Character.isUpperCase()
+
         //new T1().run();
         new T1().start();
         for(int i=0; i<10; i++) {
